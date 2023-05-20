@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>+2 Canvas collage</title>
+
+    <!--Css link-->
+    <link rel="stylesheet" type="text/css" href="School website.css" />
+    <link rel="stylesheet" type="text/css" href="./About/about.css" />
+
+    <!--javascript link-->
+    <script src="School website.js" defer></script>
+
+    <!--Friconix ICONS-->
+    <script defer src="https://friconix.com/cdn/friconix.js"></script>
+    <script defer src="https://friconix.com/cdn/friconix-0.2271.js"></script>
+
+    <!---Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,700;0,800;0,900;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!---------------Favicon----------------------->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="Favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="Favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="Favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="Favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="Favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!--SWIPER JS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <div id="main-container">
+      <div class="logo-header">
+        <div>
+          <img src="course images/canvas logo copy.png" alt="" />
+          <h1>+2 Canvas collage</h1>
+        </div>
+      </div>
+
+      <nav class="universal-padding">
+        <div class="container nav-container">
+          <a href="../index.html"><h3>+2 Canvas collage</h3></a>
+          <ul class="nav-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="About/about.html">About</a></li>
+            <li><a href="Why Us/WhyUs.html">Why Us</a></li>
+            <li><a href="Course/course.html">Subject We Teach</a></li>
+            <li><a href="Contact/contact.html">Contact</a></li>
+          </ul>
+          <button id="open-menu-btn">
+            <i class="fi-xnsuxl-three-bars-solid"></i>
+          </button>
+          <button id="close-menu-btn">
+            <i class="fi-cnsuxl-times-solid"></i>
+          </button>
+        </div>
+      </nav>
+      <!-----------------END OF NAVBAR------------------------>
+
+      <!-------------------------HEADER STARTED-------------------------------------------->
+      <header class="universal-padding">
+        <div class="container header-container">
+          <div class="header-left">
+            <h1>"Shine With Wisdom"</h1>
+            <h1>English & Nepali Medium</h1>
+            <p>
+              Welcome to +2 Canvas College, where your educational aspirations come to life. Our college is committed to providing a nurturing environment, experienced faculty, and a comprehensive curriculum. Prepare for a successful future in management studies as we empower you with knowledge, skills, and opportunities. Your journey to excellence starts here at +2 Canvas College.
+            </p>
+            <a href="../Contact/contact.html" class="btn btn.primary">Get Started</a>
+          </div>
+
+          <div class="header-right">
+            <div class="header-right-images">
+              <div id="image-container">
+                <div class="slide">
+                  <img src="student images/c3.jpg" alt="" class="image-width" />
+                  <div class="caption">Pratical Program</div>
+                </div>
+
+                <div class="slide">
+                  <img src="student images/c2.jpg" alt="" class="image-width" />
+                  <div class="caption">Trakking</div>
+                </div>
+
+                <div class="slide">
+                  <img src="student images/c1.jpg" alt="" class="image-width" />
+                  <div class="caption">Footbal</div>
+                </div>
+
+                <div class="slide">
+                  <img src="student images/c5.jpg" alt="" class="image-width" />
+                  <div class="caption">Collage Program</div>
+                </div>
+
+                <div class="slide">
+                  <img src="student images/c11.jpg" alt="" class="image-width" />
+                  <div class="caption">Showing Prtical Project</div>
+                </div>
+
+                <div class="slide">
+                  <img src="student images/c8.jpg" alt="" class="image-width" />
+                  <div class="caption">Environment Cleaning Program</div>
+                </div>
+
+                <div class="slide">
+                  <img src="student images/c4.jpg" alt="" class="image-width" />
+                  <div class="caption">Yoga Class</div>
+                </div>
+
+                <div class="slide">
+                  <img src="student images/c14.jpg" alt="" class="image-width" />
+                  <div class="caption">Festival Program</div>
+                </div>
+
+                <span class="arrow left" onclick="controler(-1)"
+                  ><i class="fi-xnslxl-chevron-solid"></i
+                ></span>
+                <span class="arrow right" onclick="controler(1)"
+                  ><i class="fi-xnsrxl-chevron-solid"></i
+                ></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <!-------------------------END OF HEADER-------------------------------------------->
+
+      <!-------------------------CATEGORIES START-------------------------------------------->
+
+      <section class="categories">
+        <div class="container categories-container universal-padding">
+          <div class="categories-left">
+            <h1>Categories</h1>
+            <p>
+              Canvas +2 Management offers a diverse range of subjects including Accountancy, Economics, Business Studies, Computer, English, Nepali, Social, and Business Mathematics. This section ensures a comprehensive curriculum that equips students with knowledge and skills in various disciplines of management education.
+            </p>
+            
+          </div>
+          <div class="categories-right">
+            <article class="catetory">
+              <span class="category-icon"
+                ><i class="fi-ctsuxl-bank-thin"></i
+              ></span>
+              <h5>+2 Management</h5>
+              <p>
+                Develops business acumen for future leaders in the corporate world.
+              </p>
+            </article>
+
+            <article class="catetory">
+              <span class="category-icon"
+                ><i class="fi-cnsuxl-chef-hat-solid"></i
+              ></span>
+              <h5>+2 Hotel Management</h5>
+              <p>
+                Equips students with skills for a successful career in hospitality.
+              </p>
+            </article>
+
+            <article class="catetory">
+              <span class="category-icon"
+                ><i class="fi-xnsuxl-computer-desktop-solid"></i
+              ></span>
+              <h5>+2 Computer Science</h5>
+              <p>
+                Explores the world of technology and computer programming.
+              </p>
+            </article>
+
+            <article class="catetory">
+              <span class="category-icon"
+                ><i class="fi-xnsuxl-handshake-solid"></i
+              ></span>
+              <h5>+2 Entrepreneurship</h5>
+              <p>
+                Nurtures innovative thinking and business acumen for aspiring entrepreneurs.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-------------------------END OF CATEGORIES-------------------------------------------->
+
+     
+
+      <!-------------------------SUBJECT-------------------------------------------->
+      <section class="courses universal-padding">
+        <h2>Subjects We Teach</h2>
+        <div class="container courses-container">
+          <article class="course">
+            <div class="course-image">
+              <img src="/booksimg/account.jpg" alt="" />
+            </div>
+            <h4>Principles of Accounting</h4>
+            <p>
+              The Accountancy subject in +2 Management focuses on principles, concepts, and techniques of financial accounting. It equips students with skills to prepare financial statements, analyze financial data, and understand the basics of business finance.
+            </p>
+            <a href="Course/course.html" class="btn btn-primary">Learn More </a>
+          </article>
+
+          <article class="course">
+            <div class="course-image">
+              <img src="/booksimg/economics.jfif" alt="" />
+            </div>
+            <h4>Economics</h4>
+            <p>
+              The Economics subject in +2 Management introduces students to the fundamental principles of microeconomics and macroeconomics. It explores topics such as supply and demand, market structures, national income, inflation, and economic policies.
+            </p>
+            <a href="Course/course.html" class="btn btn-primary">Learn More </a>
+          </article>
+
+          <article class="course">
+            <div class="course-image">
+              <img src="/booksimg/social.jfif" alt="" />
+            </div>
+            <h4>Social Life Skills</h4>
+            <p>
+              The Social subject in +2 Management provides students with a comprehensive understanding of society, culture, and current affairs. It explores topics such as sociology, anthropology, politics, and global issues, fostering critical thinking and awareness.
+            </p>
+            <a href="Course/course.html" class="btn btn-primary">Learn More </a>
+          </article>
+
+          <article class="course">
+            <div class="course-image">
+              <img src="/booksimg/English.jfif" alt="" />
+            </div>
+            <h4>English</h4>
+            <p>
+              The English subject in +2 Management aims to enhance students' English language skills, including reading, writing, listening, and speaking. It prepares them for effective communication in various professional and academic contexts.
+            </p>
+            <a href="Course/course.html" class="btn btn-primary">Learn More </a>
+          </article>
+
+          <article class="course">
+            <div class="course-image">
+              <img src="/booksimg/nepali.jpg" alt="" />
+            </div>
+            <h4>Nepali</h4>
+            <p>
+              The Nepali subject in +2 Management focuses on developing proficiency in the Nepali language, literature, and grammar, enabling students to effectively communicate and understand Nepali culture.
+            </p>
+            <a href="Course/course.html" class="btn btn-primary">Learn More </a>
+          </article>
+
+          <article class="course">
+            <div class="course-image">
+              <img src="/booksimg/computer.jfif" alt="" />
+            </div>
+            <h4>Computer (Option)</h4>
+            <p>
+              The Computer subject in +2 Management familiarizes students with computer systems, software applications, and information technology concepts. It develops skills in using productivity tools, programming fundamentals, database management, and understanding the impact of technology on businesses.
+            </p>
+            <a href="Course/course.html" class="btn btn-primary">Learn More </a>
+          </article>
+
+          <article class="course">
+            <div class="course-image">
+              <img src="/booksimg/business.jfif" alt="" />
+            </div>
+            <h4>Business Studies (Option)</h4>
+            <p>
+              The Business Studies subject in +2 Management provides students with a comprehensive understanding of business principles and practices. It covers areas such as business organization, marketing, human resources, finance, and entrepreneurship.
+            </p>
+            <a href="Course/course.html" class="btn btn-primary">Learn More </a>
+          </article>
+
+          <article class="course">
+            <div class="course-image">
+              <img src="/booksimg/businessMath.jfif" alt="" />
+            </div>
+            <h4>Business Mathematics (Option)</h4>
+            <p>
+              The Business Mathematics subject in +2 Management focuses on mathematical concepts and techniques applicable to business and economics. It covers topics such as arithmetic, algebra, statistics, financial mathematics, and data analysis.
+            </p>
+            <a href="Course/course.html" class="btn btn-primary">Learn More </a>
+          </article>
+        </div>
+      </section>
+      <!-------------------------END OF SUBJECT-------------------------------------------->
+
+      <!-------------------------FAQ ASK QUESTION-------------------------------------------->
+
+      <section class="faqs">
+        <h2>Frequently Asked Questions</h2>
+        <div class="container faqs-container">
+          <article class="faq">
+            <div class="faq-icons"><i class="fi-xwsuxl-plus-solid"></i></div>
+            <div class="question-answer">
+              <h5>What is +2 Management?</h5>
+              <p>
+                +2 Management refers to the two-year higher secondary education program in management studies. It is commonly known as the 10+2 program and serves as a foundation for students pursuing a career in business and management.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq">
+            <div class="faq-icons"><i class="fi-xwsuxl-plus-solid"></i></div>
+            <div class="question-answer">
+              <h5>What are the eligibility criteria for +2 Management?</h5>
+              <p>
+                The eligibility criteria may vary from college to college. However, in general, students who have successfully completed their 10th grade or equivalent education are eligible to apply for +2 Management programs.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq">
+            <div class="faq-icons"><i class="fi-xwsuxl-plus-solid"></i></div>
+            <div class="question-answer">
+              <h5>What subjects are offered in +2 Management?</h5>
+              <p>
+                The specific subjects offered may vary depending on the college and curriculum. However, common subjects in +2 Management programs include English, Nepali, Accountancy, Economics, Business Studies, Mathematics, and Computer Science.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq">
+            <div class="faq-icons"><i class="fi-xwsuxl-plus-solid"></i></div>
+            <div class="question-answer">
+              <h5>What career opportunities are available after completing +2 Management?</5>
+              <p>
+                After completing +2 Management, students can pursue various career paths. They can opt for undergraduate programs in business administration, commerce, finance, accounting, or other related fields. Additionally, they can also seek employment in entry-level business positions or participate in entrepreneurship ventures.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq">
+            <div class="faq-icons"><i class="fi-xwsuxl-plus-solid"></i></div>
+            <div class="question-answer">
+              <h5>Can I pursue further studies after completing +2 Management?</h5>
+              <p>
+                Yes, you can pursue further studies after completing +2 Management. Many students choose to pursue a bachelor's degree in business administration, management, commerce, or related fields. You can also explore options for professional courses like Chartered Accountancy (CA), Cost and Management Accountancy (CMA), or Company Secretary (CS).
+              </p>
+            </div>
+          </article>
+
+          <article class="faq">
+            <div class="faq-icons"><i class="fi-xwsuxl-plus-solid"></i></div>
+            <div class="question-answer">
+              <h5>Are there any extracurricular activities available for +2 Management students?</h5>
+              <p>
+                Yes, many colleges offer a range of extracurricular activities for +2 Management students. These activities can include sports, cultural events, clubs, student organizations, and leadership development programs. Engaging in extracurricular activities can help students enhance their overall skills and personal development.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq">
+            <div class="faq-icons"><i class="fi-xwsuxl-plus-solid"></i></div>
+            <div class="question-answer">
+              <h5>Are scholarships available for +2 Management students?</h5>
+              <p>
+                Some colleges and organizations may offer scholarships or financial aid to deserving +2 Management students. It is advisable to inquire with individual colleges about their scholarship programs or explore external scholarship opportunities offered by government bodies, NGOs, or private institutions.
+              </p>
+            </div>
+          </article>
+
+          <article class="faq">
+            <div class="faq-icons"><i class="fi-xwsuxl-plus-solid"></i></div>
+            <div class="question-answer">
+              <h5>How do I apply for +2 Management programs?</h5>
+              <p>
+                To apply for +2 Management programs, you generally need to check the application requirements of the respective college. Typically, you need to fill out an application form, submit required documents (such as academic transcripts, character certificates, etc.), and may need to go through an entrance examination or interview process.
+              </p>
+            </div>
+          </article>
+
+         
+          
+        </div>
+      </section>
+
+      <!--------------END OF FAQ ASK QUESTON--------------------------->
+
+      <!--------------------TESTIMONIALS START--------------------->
+      <section class="container testimonal-container mySwiper">
+        <h2>What Our Students Say</h2>
+        <div class="swiper-wrapper">
+          <article class="testimonal swiper-slide">
+            <div class="avatar">
+              <img src="./student images/me.jpg" alt="" />
+            </div>
+            <div class="testimonial-info">
+              <h5>Unish Rai</h5>
+              <small>Sudent</small>
+            </div>
+            <div class="testimonial-body">
+              <p>
+                "Studying +2 Management at Canvas College has been an incredible experience for me. The dedicated faculty members, modern infrastructure, and interactive teaching methods have helped me gain a solid foundation in business studies. The college also provided ample opportunities for extracurricular activities, which enhanced my overall personality development. I highly recommend Canvas College to aspiring management students."
+              </p>
+            </div>
+          </article>
+
+          <article class="testimonal swiper-slide">
+            <div class="avatar">
+              <img src="./student images/default_avatar.jpg" alt="" />
+            </div>
+            <div class="testimonial-info">
+              <h5>Ram Bhadur</h5>
+              <small>Sudent</small>
+            </div>
+            <div class="testimonial-body">
+              <p>
+                "Choosing Canvas College for my +2 Management studies was one of the best decisions I made. The college not only focuses on academic excellence but also encourages practical learning through industry visits, guest lectures, and case study analysis. The friendly and supportive environment of the college has fostered my personal growth and helped me build strong relationships with fellow students and faculty members. I am grateful for the valuable education and guidance I received at Canvas College."
+              </p>
+            </div>
+          </article>
+
+          <article class="testimonal swiper-slide">
+            <div class="avatar">
+              <img src="./student images/default_avatar.jpg" alt="" />
+            </div>
+            <div class="testimonial-info">
+              <h5>Priya Gupta</h5>
+              <small>Sudent</small>
+            </div>
+            <div class="testimonial-body">
+              <p>
+                "I am immensely satisfied with my experience at Canvas College. The college has a well-structured curriculum that covers all the essential subjects required for a career in management. The faculty members are highly knowledgeable, approachable, and always willing to clarify doubts. The college also provides career counseling and placement support, which has been instrumental in shaping my future career path. I am proud to be associated with Canvas College and would recommend it to anyone seeking quality education in management."
+              </p>
+            </div>
+          </article>
+
+          <article class="testimonal swiper-slide">
+            <div class="avatar">
+              <img src="./student images/default_avatar.jpg" alt="" />
+            </div>
+            <div class="testimonial-info">
+              <h5>Suresh Joshi</h5>
+              <small>Sudent</small>
+            </div>
+            <div class="testimonial-body">
+              <p>
+                "Canvas College has exceeded my expectations in terms of academic excellence and overall development. The college not only focuses on theoretical knowledge but also emphasizes practical skills through projects, presentations, and group discussions. The well-equipped library and computer labs have been immensely helpful for my studies. Moreover, the college organizes various seminars and workshops that have exposed me to industry trends and best practices. I am grateful to Canvas College for providing me with a holistic learning experience."
+              </p>
+            </div>
+          </article>
+
+          <article class="testimonal swiper-slide">
+            <div class="avatar">
+              <img src="./student images/default_avatar.jpg" alt="" />
+            </div>
+            <div class="testimonial-info">
+              <h5>Anita Sharma</h5>
+              <small>Sudent</small>
+            </div>
+            <div class="testimonial-body">
+              <p>
+                "Studying +2 Management at Canvas College has been an enriching journey for me. The college offers a student-centric approach to education, where the faculty members pay individual attention to each student's progress. The regular assessments and feedback sessions have helped me identify my strengths and weaknesses, enabling me to improve my academic performance. The college also promotes a culture of teamwork and collaboration, which has enhanced my interpersonal skills. I am thankful to Canvas College for nurturing my potential and preparing me for future challenges."
+              </p>
+            </div>
+          </article>
+        </div>
+        <div class="swiper-pagination"></div>
+      </section>
+
+      <!--------------------END OF TESTIMONIALS--------------------->
+
+      <!--------------------START FOOTER SECTION--------------------->
+      <footer class="footer">
+        <div class="container footer-container">
+          <div class="footer">
+            <a href="" class="footer-logo"><h4>+2 Canvas collage</h4></a>
+            <p>
+              "Unleash your potential, soar to success at +2 Canvas College!"
+            </p>
+          </div>
+
+          <div class="footer">
+            <h4>Permalinks</h4>
+            <ul class="foot-menu">
+              <li><a href="../index.html">Home</a></li>
+              <li><a href="About/about.html">About</a></li>
+              <li><a href="Why Us/WhyUs.html">Why Us</a></li>
+              <li><a href="Course/course.html">Subject We Teach</a></li>
+              <li><a href="Contact/contact.html">Contact</a></li>
+            </ul>
+          </div>
+
+          <div class="footer">
+            <h4>Primacy</h4>
+            <div class="primacy">
+              <li><a href="">Privacy Policy</a></li>
+              <li><a href="">Term and Condition</a></li>
+              <li><a href="">Refund Policy</a></li>
+            </div>
+          </div>
+
+          <div class="footer">
+            <h4>Contact Us</h4>
+            <div>
+              <p>9814725689</p>
+              <p>+2 Canvas collage@gmail.com</p>
+            </div>
+
+            <div class="social-icon">
+              <a href=""><i class="fi-snsuxl-facebook"></i></a>
+              <a href=""><i class="fi-xnsuxl-instagram"></i></a>
+              <a href=""><i class="fi-xnsuxl-twitter-solid"></i></a>
+              <a href=""><i class="fi-xnsuxl-whatsapp"></i></a>
+              <a href=""><i class="fi-xnsuxl-github"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="copyright-footer">
+          <small>Copyright &copy; +2 Canvas collage</small>
+        </div>
+      </footer>
+      <!--------------------END OF  FOOTER SECTION--------------------->
+    </div>
+
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: "1",
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+
+        //WHEN WINDOW IS >=600PX;
+        breakpoints: {
+          600: {
+            slidesPerView: 2,
+          },
+        },
+      });
+    </script>
+
+    <script>
+      let flag = 0;
+
+      function controler(x) {
+        flag = flag + x;
+        slideshow(flag);
+      }
+
+      slideshow(flag);
+      function slideshow(num) {
+        let slides = document.getElementsByClassName("slide");
+
+        if (num == slides.length) {
+          flag = 0;
+          num = 0;
+        }
+
+        if (num < 0) {
+          flag = slides.length - 1;
+          num = slides.length - 1;
+        }
+
+        for (let y of slides) {
+          y.style.display = "none";
+        }
+        slides[num].style.display = "block";
+      }
+    </script>
+  </body>
+</html>
