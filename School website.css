@@ -746,8 +746,8 @@ padding: 15px 2px;
 .partical{
     background-repeat: no-repeat;
     background-size: cover !important;
-    height: 160px;
-    width: 160px;
+    height: 140px;
+    width: 140px;
 }
 .partical_card{
     display: flex;

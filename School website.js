@@ -24,7 +24,7 @@ faqs.forEach(faq=>{
 const menu=document.querySelector(".nav-menu");
 const menuBtn=document.querySelector("#open-menu-btn");
 const closeBtn=document.querySelector("#close-menu-btn");
-const showHide=document.querySelector(".container a h3")
+const showHide=document.querySelector(".container a h4")
 
 
 menuBtn.addEventListener('click',()=>{
